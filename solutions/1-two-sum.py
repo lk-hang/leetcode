@@ -9,10 +9,9 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 """
-
+import numpy as np
 from typing import List
-
-class Solution:
+class Solution:  
         def twoSum(self, nums: List[int], target: int) -> List[int]:
             res = dict()
             # O(N)
@@ -31,7 +30,6 @@ class Solution:
                         continue
                     else:
                         return [i, key]
-            
 
 if __name__ == "__main__":
     sol = Solution()

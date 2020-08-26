@@ -11,6 +11,7 @@ class Solution:
         while max_num > binary:
             binary <<= 1
 
+
         count = 0
         while binary > 0:
             if x // binary != y // binary:
